@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1777701578830,
+    "name": "Admin",
+    "email": "admin@gmail.com",
+    "password": "$2b$10$BRzvXJmbObPe1pg0dHmBVupu0e74.EjSKuzCC8TySa77zY4dFfzMC",
+    "role": "admin"
+  },
+  {
+    "id": 1777701598482,
+    "name": "Keerthi",
+    "email": "keerthi@gmail.com",
+    "password": "$2b$10$8lphsQhEnerWGOpzHiyRFOjEm8tq4IePPUes/OSHf9DwJIzsKnTQS",
+    "role": "user"
+  }
+]
