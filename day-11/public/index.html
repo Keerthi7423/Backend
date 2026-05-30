@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chat App</title>
+</head>
+
+<body>
+
+<h2>Live Chat</h2>
+
+<input
+id="message"
+placeholder="Enter message"
+/>
+
+<button onclick="sendMessage()">
+Send
+</button>
+
+<ul id="messages"></ul>
+
+<script src="/socket.io/socket.io.js"></script>
+
+<script>
+
+const socket = io();
+
+function sendMessage() {
+
+const msg =
+document.getElementById("message").value;
+
+socket.emit(
+"chat-message",
+msg
+);
+
+}
+
+socket.on(
+"chat-message",
+(msg)=>{
+
+const li =
+document.createElement("li");
+
+li.textContent = msg;
+
+document
+.getElementById("messages")
+.appendChild(li);
+
+});
+
+</script>
+
+</body>
+</html>
